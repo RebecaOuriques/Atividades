@@ -1,0 +1,28 @@
+
+<b2>Qual é a2> fração? </b
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, tamanho, cor) {
+   
+   var tela = document.querySelector("canvas");
+   var pincel = tela.getContext("2d");
+
+   pincel.fillStyle= cor;
+   pincel.fillRect(x, y, tamanho, tamanho);
+   pincel.strokeStyle= "black";
+   pincel.strokeRect(x, y, tamanho, tamanho);
+
+}
+
+document.write("Qual é a fração? ");
+
+desenhaQuadrado(50, 50, 90, "green");
+desenhaQuadrado(140, 50, 90, "green");
+desenhaQuadrado(230, 50, 90, "green");
+desenhaQuadrado(320, 50, 90, "white");
+
+
+</script>
